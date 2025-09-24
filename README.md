@@ -3,13 +3,13 @@
 "toolVision" adalah sebuah package yang digunakan untuk melakukan capture dan pengaturan parameter untuk sistem vision pada robot.
 sebelum menggunakan package ini pastikan telah menginstal:
 
-1. [Opencv](../INSTALL/install_opencv.md)
+1. [Opencv](https://barelang63-brail.github.io/Barelang63-Dokumentasi/INSTALL/install_opencv/)
 
-2. [CUDA](../INSTALL/cuda_and_cudnn.md)
+2. [CUDA](https://barelang63-brail.github.io/Barelang63-Dokumentasi/INSTALL/cuda_and_cudnn/)
 
-3. [ZED SDK](../INSTALL/zed_sdk_install.md)
+3. [ZED SDK](https://barelang63-brail.github.io/Barelang63-Dokumentasi/INSTALL/zed_sdk_install/)
 
-4. [Other Dependencies](../INSTALL/install_all.md)
+4. [Other Dependencies](https://barelang63-brail.github.io/Barelang63-Dokumentasi/INSTALL/install_all/#instalasi-library-untuk-robot)
 
 anda dapat mengclone package "toolVision" dengan command:
 ```{ .sh .copy }
@@ -51,7 +51,7 @@ Dengan menjalankan executable ini, Anda dapat membuka kamera omni yang terdapat 
 ./capture_omni
 ```
 
-![Alt Text](../images/toolvision_folder/omni1.png)
+![Alt Text](assets/omni1.png)
 
 Saat menjalankan executable ini, trackbar untuk mengatur brightness, saturation, dan contrast juga akan muncul. Sesuaikan nilai-nilai tersebut sesuai kebutuhan Anda.
 
@@ -72,7 +72,7 @@ Executable ini memiliki fungsi yang sama seperti executable **./capture_omni**, 
 ./capture_zed
 ```
 
-![Alt Text](../images/toolvision_folder/zed1.png)
+![Alt Text](assets/zed1.png)
 
 Untuk memulai merekam, ikuti langkah-langkah berikut:
 
@@ -95,7 +95,7 @@ Saat executable ini dijalankan, kamera omni yang terdapat pada robot akan terbuk
 1: Masking Lapangan
 2: Masking Obstacle
 ```
-![Alt Text](../images/toolvision_folder/omni2.png)
+![Alt Text](assets/omni2.png)
 
 Setelah executable dijalankan, Anda dapat mengatur parameter untuk vision pada robot. Sesuaikan parameter tersebut sesuai dengan kebutuhan, kemudian tekan "s" untuk menyimpan parameter yang telah diatur ke dalam file konfigurasi yang terdapat pada robot.
 
@@ -110,6 +110,6 @@ Mirip dengan executable **./omni_seg_camera**, namun executable ./omni_seg_video
 1: Masking Lapangan
 2: Masking Obstacle
 ```
-![Alt Text](../images/toolvision_folder/omni3.png)
+![Alt Text](assets/omni3.png)
 
 Pada executable ini, parameter yang dapat diatur hanya untuk segmentasi warna. Pastikan untuk menyesuaikan path video Anda pada program **src/omni_seg_video.cpp**. Anda tidak dapat mengatur parameter brightness, saturation, dan contrast, karena executable ini membuka video, sehingga pengaturan tersebut hanya diperlukan saat merekam video dengan **./capture_omni**.
